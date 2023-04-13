@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.button{
+    border-radius:  25%;
+    height: 85px;
+    width: 110px;
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    color: black;
+   
+}
+
+.button:hover{
+    box-shadow: 0 0 10px 3px rgba(5, 172, 50, 0.7);
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+<div [ngSwitch]="path">
+    <div class="main-body" *ngSwitchCase = "'character'">
+        <div>
+            <img [src]="elements.image" alt="placeholder char portrait">
+            <h3>Name: {{elements.name}}</h3>
+            <p>Species:{{elements.species}}</p>
+            <p>Gender:{{elements.gender}}</p>
+            <p>Status:{{elements.status}}</p>
+        </div>
+        <div class="episodes">
+            <h3>Episodes</h3>
+            <ul>
+                <li *ngFor="let item of secondaryElements">{{item.id}}. {{item.name}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-body" *ngSwitchCase = "'episode'">
+        <h3>Title: {{elements.name}} </h3>
+        <h4>First aired: {{elements.air_date}}</h4>
+        <div class="episodes">
+            <h3>Appearing Characters</h3>
+            <ul >    
+                <li *ngFor="let char of secondaryElements">{{char.name}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-body" *ngSwitchCase="'location'">
+        <h2>Name: {{elements.name}} </h2>
+        <h3>Details: {{elements.details}}</h3>
+        <h3>Dimension: {{elements.dimension}}</h3>
+        <div class="episodes">
+            <h3>Residents</h3>
+            <ul>
+                <li *ngFor="let char of secondaryElements">{{char.name}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--
+    ngFor="let char of appearingChars"
+    
+ -->
