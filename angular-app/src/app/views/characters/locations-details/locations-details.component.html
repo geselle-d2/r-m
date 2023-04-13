@@ -1,0 +1,11 @@
+<div class="main-body">
+<h2>Name: {{locationDetails.name}}</h2>
+<h3>Details: {{locationDetails.type}}</h3>
+<h3>Dimension: {{locationDetails.dimension}}</h3>
+<div class="episodes">
+    <h3>Residents</h3>
+    <ul>
+        <li *ngFor="let char of locSpecificChars">{{char.name}}</li>
+    </ul>
+</div>
+</div>

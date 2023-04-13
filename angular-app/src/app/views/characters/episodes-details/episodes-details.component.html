@@ -1,0 +1,10 @@
+<div class="main-body">
+    <h3>Title: {{episodeDetails.name}}</h3>
+    <h4>First aired: {{episodeDetails.air_date}}</h4>
+    <div class="episodes">
+        <h3>Appearing Characters</h3>
+        <ul>    
+            <li *ngFor="let char of appearingChars">{{char.name}}</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="main-body">
+    <div>
+        <img [src]="characterDetails.image" alt="placeholder char portrait">
+        <h3>Name: {{characterDetails.name}}</h3>
+        <p>Species:{{characterDetails.species}}</p>
+        <p>Gender:{{characterDetails.gender}}</p>
+        <p>Status:{{characterDetails.status}}</p>
+    </div>
+    <div class="episodes">
+        <h3>Episodes</h3>
+        <ul>
+            <li *ngFor="let episode of charSpecificEpisodes">{{episode.id}}. {{episode.name}}</li>
+        </ul>
+    </div>
+</div>

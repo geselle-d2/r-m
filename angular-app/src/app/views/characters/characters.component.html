@@ -1,0 +1,10 @@
+
+<div class="main-body" *ngIf="fetchedData">
+    <div class="button-container">
+        <div class="button" *ngIf="fetchedData.info.prev"><a [routerLink]="[]" [queryParams]="{page:prevPage}">prev</a></div>
+        <div class="button" *ngIf="fetchedData.info.next"><a [routerLink]="[]" [queryParams]="{page:nextPage}">next</a></div>
+    </div>
+    <ul class="element-list">
+        <li class="element" *ngFor="let element of fetchedData.results" (click)="openCharPortrait(element.id)">{{element.id}}. {{element.name}}</li>
+    </ul>
+</div>

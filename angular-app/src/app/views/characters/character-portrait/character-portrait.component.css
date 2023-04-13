@@ -1,0 +1,26 @@
+.main-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    margin-top: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    padding: 5px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.episodes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
